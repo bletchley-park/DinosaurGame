@@ -12,7 +12,7 @@ class Score:
         self.loadSound()
     
     def loadSound(self):
-        path = os.path.join('Dino/sounds/point.wav')
+        path = os.path.join('src/sounds/point.wav')
         self.sound = pg.mixer.Sound(path)
 
     def update(self, score):

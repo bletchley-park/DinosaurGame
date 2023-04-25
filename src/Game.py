@@ -20,7 +20,7 @@ class Game:
         self.writeLabels()
     
     def loadSound(self):
-        path = os.path.join('Dino/sounds/die.wav')
+        path = os.path.join('src/sounds/die.wav')
         self.sound = pg.mixer.Sound(path)
     
     def writeLabels(self):

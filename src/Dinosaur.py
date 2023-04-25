@@ -52,12 +52,12 @@ class Dinosaur:
         screen.blit(self.image, (self.x, self.y))
 
     def loadImage(self):
-        path = os.path.join(f'Dino/images/dino{self.imageNum}.png')
+        path = os.path.join(f'src/images/dino{self.imageNum}.png')
         self.image = pg.image.load(path)
         self.image = pg.transform.scale(self.image, (self.width, self.height))
 
     def loadSound(self):
-        path = os.path.join('Dino/sounds/jump.wav')
+        path = os.path.join('src/sounds/jump.wav')
         self.sound = pg.mixer.Sound(path)
 
     def jump(self):
